@@ -97,8 +97,7 @@ add_hook('ClientDetailsValidation', 1, function($vars) {
 
     /**
      * IMPORTANTE
-     * Altere o índice abaixo caso o CPF/CNPJ
-     * não seja o primeiro campo personalizado.
+     * customfields = Campos Personalizados do cadastro do Cliente / "[1]" é qual campo afetar, no caso, o primeiro campo personalizado e único.
      */
     $campo = $vars['customfields'][1] ?? '';
 
